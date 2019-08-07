@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table,
+        tr,
+        td {
+            border: 1px solid black;
+        }
+
+        tr,
+        td {
+            padding: 20px;
+            
+        }
+        .warningBox{
+            background-color: bisque;
+            border:blueviolet;
+            display:-webkit-inline-box;
+        }
+        } 
+    </style>
+</head>
+
+<body style="background-color:powderblue;">
+    <script>
+        function confirmbox() {
+            alert("do you want to submit");
+            document.getElementById("warning1").hidden=false;
+            document.getElementById("warning2") .hidden=false;
+        }
+
+        function multiple_error() {
+            document.getElementById("warning2") .hidden=true;
+        }
+    </script>
+    <h1 style="text-align:center;">Anna University Result</h1>
+    <p><b>student login</b></p>
+    <table style="width:40%;height=50%;">
+        <tr>
+            <td>register number</td>
+            <td>7457</td>
+        </tr>
+        <tr>
+            <td>date of birth</td>
+            <td>00796</td>
+        </tr>
+    </table><br>
+    <button id="submit" onclick="confirmbox()">submit</button>
+    <div id="warning1" hidden="true"> <table class="warningBox">
+        <tr>
+            <td>
+                <p>unable to load the page,please try again</p>
+            </td>
+        </tr>
+        </table>
+    </div>
+    <div id="warning2" hidden="true">
+        <table class='warningBox'>
+            <tr>
+                <td>
+                    <p>mutiple error<br>
+                        <button style="text-align:center;" onclick="multiple_error()">dismiss</button>
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
