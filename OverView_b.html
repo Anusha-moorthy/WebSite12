@@ -8,6 +8,12 @@
     </script>
     </head>
     <body>
+        <script>
+        function confirmBox(){
+            alert("learn more");
+            document.getElementById("warning1").hidden=false;
+        }
+        </script>
       <div class="container-fluid">
           <div class="row text-center">
               <div class="col md-12">
@@ -19,31 +25,31 @@
       
       <div class="container-fluid">
           <div class="row text-center mt-4 pt-2">
-              <div class="col md-3 sm=6 xs=12">
+              <div class="col md-3 sm-6 xs-12">
                   <div class="card">
                       <div class="card-img-top">
-                         <img src="img/MU.jpg"></img> 
+                         <img src="UM.jpg"></img> 
                       </div>
                   </div>
               </div>
-        <div class="col md-3 sm=6 xs=12">
+        <div class="col md-3 sm-6 xs-12">
             <div class="card">
                 <div class="card-img-top">
-                   <img src="img/univ.jpg"></img> 
+                   <img src="univ.jpg"></img> 
                 </div>
             </div>
        </div>
-        <div class="col md-3 sm=6 xs=12">
+        <div class="col md-3 sm-6 xs-12">
             <div class="card">
                 <div class="card-img-top">
-                   <img src="img/madras.jpg"></img> 
+                   <img src="madras.jpg"></img> 
                 </div>
             </div>
        </div>
-       <div class="col md-3 sm=6 xs=12">
+       <div class="col md-3 sm-6 xs-12">
             <div class="card">
                 <div class="card-img-top">
-                   <img src="img/university.jpg"></img> 
+                   <img src="university.jpg"></img> 
                 </div>
             </div>
        </div>
@@ -56,7 +62,16 @@
        </div>
        <div class="container-fluid">
            <div class="row text-center mt-4 pt-4">
-               <button class="btn-info btn-lg">More Details</button>
+               <button id="submitBotton" class="btn-info btn-lg" onclick="confirmBox()">More Details</button>
+            <div id="warning1" hidden>
+                <table class="warningBox">
+                    <tr>
+                        <td>
+                            <p>the page is not found</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>   
            </div>
        </div>
     </body>

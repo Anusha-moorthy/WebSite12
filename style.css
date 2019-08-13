@@ -1,0 +1,22 @@
+body{
+    font-family:ABeeZee;
+}
+table,
+        tr,
+        td {
+            border: 1px solid black;
+        }
+
+        tr,
+        td {
+            padding: 20px;
+            
+        }
+        .warningBox{
+            background-color: bisque;
+            border:blueviolet;
+            display:-webkit-inline-box;
+        }
+        .card-img-top{
+            padding:3rem;width:50%;height:50%;
+        }
