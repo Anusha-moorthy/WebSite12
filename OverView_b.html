@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css"></link>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    </link>
+    <script> src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+    </script>
+    </head>
+    <body>
+        <script>
+        function confirmBox(){
+            alert("learn more");
+            document.getElementById("warning1").hidden=false;
+        }
+        </script>
+      <div class="container-fluid">
+          <div class="row text-center">
+              <div class="col md-12">
+              <h1>University of Madras</h1>
+              <h4>Public university in Chennai, Tamil Nadu</h4>
+              </div>
+          </div>
+      </div>  
+      
+      <div class="container-fluid">
+          <div class="row text-center mt-4 pt-2">
+              <div class="col md-3 sm-6 xs-12">
+                  <div class="card">
+                      <div class="card-img-top">
+                         <img src="UM.jpg"></img> 
+                      </div>
+                  </div>
+              </div>
+        <div class="col md-3 sm-6 xs-12">
+            <div class="card">
+                <div class="card-img-top">
+                   <img src="univ.jpg"></img> 
+                </div>
+            </div>
+       </div>
+        <div class="col md-3 sm-6 xs-12">
+            <div class="card">
+                <div class="card-img-top">
+                   <img src="madras.jpg"></img> 
+                </div>
+            </div>
+       </div>
+       <div class="col md-3 sm-6 xs-12">
+            <div class="card">
+                <div class="card-img-top">
+                   <img src="university.jpg"></img> 
+                </div>
+            </div>
+       </div>
+       </div>
+       </div>
+       <div class="container-fluid">
+           <div class="row pt-3">
+       <p>University of Madras is a public state university in chennai,tamil nadu,india.Established in 1857,it is one of the oldest university in India.The university was incorparated by an act of the Legislative Council of India.</p>
+       </div>
+       </div>
+       <div class="container-fluid">
+           <div class="row text-center mt-4 pt-4">
+               <button id="submitBotton" class="btn-info btn-lg" onclick="confirmBox()">More Details</button>
+            <div id="warning1" hidden>
+                <table class="warningBox">
+                    <tr>
+                        <td>
+                            <p>the page is not found</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>   
+           </div>
+       </div>
+    </body>
+</html>
