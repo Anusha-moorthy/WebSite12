@@ -1,0 +1,29 @@
+body{
+    font-family: ABeeZee;
+    /* font-size: 2rem ; */
+}
+table,
+tr,
+td {
+    border: 1px solid black;
+}
+
+tr,
+td {
+    padding: 20px;
+}
+
+.warningBox {
+    background-color: bisque;
+    display: -webkit-box;
+    border: 0;
+
+}
+.med-img{
+    /* max-width: 80%; */
+    max-block-size: 10rem;
+
+}
+.card-img-top{
+    padding:2rem;
+}

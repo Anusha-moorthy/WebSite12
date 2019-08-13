@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table,
+        tr,
+        td {
+            border: 1px solid black;
+        }
+
+        tr,
+        td {
+            padding: 20px;
+        }
+
+        .warningBox {
+            background-color: bisque;
+            display: -webkit-box;
+            border: 0;
+
+        }
+    </style>
+</head>
+
+<body style="background-color:powderblue;">
+    <script>
+        function confirmBox() {
+            alert("do you want to submit?");
+            checkConnectivity();
+            }
+        function checkConnectivity(){
+            //blah blah checks connections
+            var failed = true;
+            console.log(failed);
+            if(failed){
+                document.getElementById("warning2").innerHTML= "<table class='warningBox'><tr><td><p>Temproary  Error, unable to process, please retry</p></td></tr></table>";
+                document.getElementById("warning1").hidden=false;
+            }
+        }
+
+    </script>
+
+
+    <h1 style="text-align:center;">Anna University Result</h1>
+    <p><b>student login</b></p>
+    <table style="width:40%;height=50%;">
+        <tr>
+            <td>register number</td>
+            <td>7457</td>
+        </tr>
+        <tr>
+            <td>date of birth</td>
+            <td>00796</td>
+        </tr>
+    </table><br>
+    <button id="submitButton" onClick="confirmBox()">submit</button>
+    <div id="warning1" hidden >
+        <table class="warningBox">
+            <tr>
+                <td>
+                    <p>
+                        Mulitple Errors
+                        <button 
+                        onClick="document.getElementById('warning1').hidden=true;">dismiss</button>
+                    </p>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="warning2"  >
+            
+        </div>
+</body>
+
+</html>

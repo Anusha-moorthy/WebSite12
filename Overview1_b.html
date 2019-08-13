@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    </link>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
+    </link>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <script>
+        function confirmBox() {
+            alert("do you want to submit?");
+            checkConnectivity();
+        }
+        function checkConnectivity() {
+            //blah blah checks connections
+            var failed = true;
+            console.log(failed);
+            if (failed) {
+                document.
+                    getElementById("warning2").
+                    innerHTML = "<table class='warningBox'><tr><td><p>Temproary Error, unable to process, please retry</p></td></tr></table>";
+                document.getElementById("warning1").hidden = false;
+            }
+        }
+
+    </script>
+
+    <div class="container-fluid">
+        <div class="row text-center">
+            <div class="col md-12">
+                <h2>Universities Admission</h2>
+                <h4>Check Status for multiple Universities</h4>
+                <a href="Overview1.html">Back to Classic Page</a>    
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row text-center mt-4 pt-2">
+            <div class="col md-3 sm=6 xs=12">
+                <div class="card">
+                    <div class="card-img-top">
+                        <img class="med-img" src="img/sathyabhama.jpg"></img>
+                    </div>
+                    <div class="card-body">
+                        <h4>Sathyabhama Universtity</h4>
+                        <h6> Chennai</h6>
+                        <a href="Overview1.html"><button class="btn-info btn-lg">Find More</button></a>    
+                    </div>
+                </div>
+
+            </div>
+            <div class="col md-3 sm=6 xs=12">
+                <div class="card">
+                    <div class="card-img-top">
+                        <img class="med-img" src="img/MU.png"></img>
+                    </div>
+                    <div class="card-body">
+                        <h4>Madras Universtiy</h4>
+                        <h6> Chennai</h6>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col md-3 sm=6 xs=12">
+                <div class="card">
+                    <div class="card-img-top">
+                        <img class="med-img" src="img/MKU.jpg"></img>
+                    </div>
+                    <div class="card-body">
+                        <h4>Madurai Kamaraj Universtity</h4>
+                        <h6> Madurai</h6>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col md-3 sm=6 xs=12">
+                <div class="card">
+                    <div class="card-img-top">
+                        <img class="med-img" src="img/Bharathidasan.gif"></img>
+                    </div>
+                    <div class="card-body">
+                        <h4>Bharathidasan University</h4>
+                        <h6> Trichy</h6>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <h6>Anna University Result</h6>
+        <p><b>student login</b></p>
+        <table style="width:40%;height=50%;">
+            <tr>
+                <td>register number</td>
+                <td>7457</td>
+            </tr>
+            <tr>
+                <td>date of birth</td>
+                <td>00796</td>
+            </tr>
+        </table><br>
+        <button id="submitButton" onClick="confirmBox()">submit</button>
+        <div id="warning1" hidden>
+            <table class="warningBox">
+                <tr>
+                    <td>
+                        <p>
+                            Mulitple Errors
+                            <button onClick="document.getElementById('warning1').hidden=true;">dismiss</button>
+                        </p>
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="warning2">
+
+        </div>
+    </div>
+</body>
+
+</html>
