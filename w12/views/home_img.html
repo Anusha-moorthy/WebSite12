@@ -2,7 +2,7 @@
 <header>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -17,6 +17,7 @@
             <div class="col md-12">
                 <a href="atm1.html" id="next">next</a><br></br>
                 <a href="atm_help.html" id="help">help</a>
+                <h3><img src="img/UM.jpg"></h3>
             </div>
         </div>
         <div class="container">
@@ -53,67 +54,18 @@
 
             <div class="row text-center">
                 <div class="col md-12 p-2 m-2">
-                    <textarea id="opt" maxlength="100" size="70" cols="70" rows="10">
+                    <textarea id="opt" maxlength="100" size="70" cols="70" rows="10">                                                                           
                     </textarea>
 
                 </div>
             </div>
+            <div>
+                <a id="navSubMenu" href="/sub_menu">test link</a>
+            </div>
 
+<script src="BankMsg.js" ></script>
 
-
-            <script>
-                var x = function fn_1() {
-                    // document.getElementById("opt").value="welcome";
-                    console.log(count);
-                    if (count > 2) {
-                        alert("max tries over");
-
-
-                        // $("#cardNo").attr("disabled",true);
-                    }
-                    $("#opt").val("Welcome");
-                    var v1 = $("#cardNo").val();
-                    if (v1 == bankMsg.cardNo_echo) {
-                        $("#opt").val("you have entered " + v1);
-                        $("#ipt1").val(bankMsg.menuItems[0].lbl);
-                        $("#ipt2").val(bankMsg.menuItems[1].lbl);
-                        $("#ipt3").val(bankMsg.menuItems[2].lbl);
-                        $("#ipt4").val(bankMsg.menuItems[3].lbl);
-                    }
-                    else {
-                        count = count + 1;
-                        $("#opt").val("ivnvalid card number " + v1);
-
-                    }
-                }
-                var f1 = function btn1_click() {
-                    console.log("click");
-                    var x1 = bankMsg.menuItems[0].subMenu;
-                    var i = 0;
-                    for (i = 0; i < x1.length; i++) {
-                        console.log(x1[i].lbl);
-                    }
-                }
-
-
-                $("#swipeBtn").click(x);
-                $("#btn1").click(f1);
-            // $("#btn2").click(b);
-            // $("#btn3").click(c);
-            // $("#btn4").click(d);
-
-
-
-
-            </script>
-
-            <!-- -->
-
-
-
-
-
-
+    
 </body>
 
 </html>
