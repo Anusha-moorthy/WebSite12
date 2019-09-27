@@ -1,0 +1,60 @@
+<html>
+<header>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
+    <script src="jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</header>
+
+<body>
+    <div class="container">
+        <div class="row text-center m-3 p-2">
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="row ">
+
+            <div class="col md-8 xs-12 p-2 m-2">
+                <form id="form1" action="/regUser" method="POST" validate>
+                    <div class="control-group">
+                        <h1>Students Registration</h1>
+                        <label>name</label>
+                        <input id="name" name="name" type="string" class="form-control" size="10" required 
+                        data-validation-required-message="enter the name"></input>
+                        <label>rollNo</label>
+                        <input id="rollNo" name="rollNo" type="number" class="form-control" maxlength="10" size="10" required 
+                        data-validation-required-message="enter a roll no"></input>
+                        <label>Date of Birth</label>
+                        <input id="dob" name="dob" type=date required maxlength="10" class="form-control" size="10"
+                        data-validation-required-message="need this field"
+                        ></input>
+                        <br>
+                    </div>
+                    <hr>
+                    </hr>
+                    <button id="Create" type="submit" class="btn btn-lg btn-info">Create</button>
+                </form>
+            </div>
+            <div class="col md-4 xs-12 text-center">
+                <a href="atm1.html" id="next">next</a><br></br>
+                <a href="atm_help.html" id="help">help</a>
+                <h3><img src="img/UM.jpg"></h3>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>

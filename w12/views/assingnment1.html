@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<header>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+</header>
+
+<body>
+    <div class="container">
+        <div class="row">
+        <div class="col md-6">
+            <h3 class="text-center">Search for Weather</h3>
+                            <div class="form-group">
+                    <input id="weatherlocation" type="text" class="form-control" aria-describedby="weatherlocation" placeholder="please input a location"></input>
+                    <p><h3>Temperature in the City</h3></p>
+                    <p id="result1" ></p>
+                </div>
+                <br>
+            <div class="text-center">
+                <button id="temp"  class="btn btn-success btn-md">Search for Weather</button>
+            </div>
+            
+        </div>
+        <div class="col md-6">
+            <h3 class="text-center">weather details:</h3>
+        </div>
+    </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("#temp").click(function(){
+                // alert('hello')
+                console.log("climate")
+                $.ajax({
+                    url:"http://api.openweathermap.org/data/2.5/weather?units=metric&q="+
+                    $("#weatherlocation").val() +"&appid=7ce6041ebabda209af72ac595c6145e8",
+                    success:function (climate, status){
+                        console.log(status);
+                        var temperature=climate.main.temp;
+                        console.log(temperature)
+                        $("#result1").text(temperature)
+                    },
+                    
+                    
+                })
+                console.log("climate call completed")
+            })
+        })
+    </script>
+</body>
+</html>

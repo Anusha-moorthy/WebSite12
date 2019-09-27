@@ -1,0 +1,47 @@
+<html>
+<header>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
+    <script src="jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</header>
+
+<body>
+    <div class="container">
+        <div class="row text-center m-3 p-2">
+            <div class="col md-12">
+                <a href="atm1.html" id="next">next</a><br></br>
+                <a href="atm_help.html" id="help">help</a>
+                <h3><img src="img/UM.jpg"></h3>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row text-center">
+            <form id="form1" action="/regUser" method="POST">
+                <div class="col md-12 p-2 m-2">
+                    <input id="userId" name="rollNo" maxlength="10" size="10">
+                    <h6>rollNo</h6></input>
+                    <input id="pw" name="dob" maxlength="10" size="10">
+                    <h6>Date of Birth</h6></input>
+                    <button id="login" type="submit" class="btn btn-lg btn-info">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <a id="navSubMenu" href="/sub_menu">test link</a>
+    </div>
+
+    <script src="BankMsg.js"></script>
+
+
+</body>
+
+</html>

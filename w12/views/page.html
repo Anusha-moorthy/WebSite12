@@ -1,0 +1,52 @@
+<html>
+<header>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
+    <script src="jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin>
+    </script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script type="application/javascript" src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+
+</header>
+
+<body>
+    <div id="myid">
+        <script type="text/babel">
+           var rootElement = document.getElementById("message");
+            class ABC extends React.Component{
+                render(){
+                    if(this.props.page=="user"){
+                     return(<h1>About My Page</h1>);
+                    }
+                    else{
+                        return(<h2>Not Found</h2>);
+                    }
+                                
+                            
+               }
+            }
+            function App(){
+                return (<div><ABC page="user"></ABC></div>)
+            }
+            
+            ReactDOM.render(<App/>,rootElement)
+                    
+        </script>
+    </div>
+    <div class="container">
+        <div class="row text-center">
+            <h6>this page is not working</h6>
+        </div>
+    </div>
+</body>
+
+</html>
