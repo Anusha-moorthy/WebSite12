@@ -5,8 +5,6 @@ import {univ} from './univ'
  
 
 export default combineReducers({
-  wishes,
-  buys,
   univ
   
 })

@@ -30,14 +30,15 @@ const Dynalist =({ dispatch }) => (
           let obj = {
             type: 'UNIV',
             id: 1,
-            text:'UNIVEDIN'
+            text:'UNIVEDIN',
+            rating:'7/10'
           }
             dispatch(obj)
  
           
         }}>University of Edinburg1 
           </a>
-          <Item/>
+         
         <div>
 
         </div>

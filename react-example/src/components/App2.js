@@ -2,6 +2,8 @@ import React from 'react'
 import AddItems from '../containers/AddItems'
 import Statlist from './Statlist'
 import Dynalist from './Dynalist'
+import { AboutMessage, RatingMessage } from './AboutMessage'
+
 function Hello(props) {
   return <h1 style={props.stylingObject} >{props.message}</h1>
 }
@@ -24,7 +26,10 @@ const Univ = () => (
       </tr>
       <Statlist/>
       <Dynalist/>
+      
     </table>
+    <AboutMessage/>
+    <RatingMessage/>
 
 
 
